@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FakeReact</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap" rel="stylesheet">
+</head>
+<style>
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #fafafa;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: black;
+
+    }
+
+    .navbar {
+        display: flex;
+        padding: 10px;
+        background-color: black;
+
+    }
+
+    .obal {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        width: 1000px;
+        align-items: center;
+        color: white;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .container {
+        width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hlavicka {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        width: 1000px;
+    }
+
+    .nav-links a {
+        margin-right: 35px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .tlacitko {
+        background-color: white;
+        color: black;
+        padding: 8px;
+        font-size: 16px;
+        height: 35px;
+        border: 2px solid #888888;
+        display: flex;
+        border-radius: 0.2em;
+
+    }
+
+    .tlacitko2 {
+        background-color: black;
+        color: white;
+        padding: 8px;
+        font-size: 16px;
+        height: 35px;
+        border: 2px solid black;
+        display: flex;
+        border-radius: 0.2em;
+
+    }
+
+
+    .promo {
+        margin: 0 auto;
+        width: 100%;
+
+    }
+
+    h1 {
+
+        font-size: 80px;
+        text-align: center;
+
+    }
+
+    p {
+        color: #888888;
+        text-align: center;
+        margin: 0;
+    }
+
+
+
+
+    .okno  {
+        width: 300px;
+        height: 300px;
+       text-align: center;
+    }
+
+    .okna {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .container2 {
+        width: 100%;
+    }
+    .containerdown {
+        width: 1000px;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: right;
+        padding-top: 20px;
+    }
+
+</style>
+<body>
+
+<div class="navbar">
+    <div class="obal">
+        <img src="https://raw.githubusercontent.com/2bad2furious/next-task-assets/main/vercel.png" style="height: 20px">
+        <span>Deploy <b>Next</b> on Vercel →</span>
+    </div>
+</div>
+<div class="container">
+    <nav class="hlavicka">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/2bad2furious/next-task-assets/main/logo.png"
+                 style="height: 20px">
+
+        </div>
+        <div class="nav-links">
+            <a href="#">ShowCase</a>
+            <a href="#">Docs</a>
+            <a href="#">Blog</a>
+            <a href="#">Analytics</a>
+            <a href="#">Templates</a>
+            <a href="#">Enterprise</a>
+        </div>
+        <button class="tlacitko">FeedBack</button>
+        <button class="tlacitko2">Learn</button>
+    </nav>
+
+    <div class="promo">
+
+        <h1>The react framework</h1>
+        <h1>for the web</h1>
+
+    </div>
+
+    <p>Used by some of the world's largest companies, Next.js enables you to create full-stack web applications by</p>
+    <p>extending the latest React features, and integrating powerful Rust-based JavaScript tooling for the fastest
+        builds</p>
+
+    <div class="okna">
+        <div class="okno">
+            <img src="https://raw.githubusercontent.com/2bad2furious/next-task-assets/main/routing.png" height="250px" width="300px">
+            <h6>Powerful routing</h6>
+        </div>
+        <div class="okno">
+            <img src="https://raw.githubusercontent.com/2bad2furious/next-task-assets/main/react-rotated.png" height="250px" width="300px">
+        <h6>React server components</h6>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="containerdown"> <img src="https://raw.githubusercontent.com/2bad2furious/next-task-assets/main/vercel_light_bg.png"> Copyright</div>
+    </div>
+
+</div>
+</body>
+</html>

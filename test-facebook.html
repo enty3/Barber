@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IDK</title>
+    <style>
+
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background-color: darkgreen;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .logo {
+            
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+        }
+
+        .logo img {
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .phone {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            font-size: 14px;
+        }
+
+        .phone i {
+            margin-right: 5px;
+        }
+
+        .offer {
+            text-align: center;
+            margin-right: auto;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .offer h2 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 5px;
+        }
+
+        .offer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+
+        .lang span {
+            margin-right: 5px;
+        }
+
+        .user-dropdown:hover ul {
+            display: block;
+        }
+
+        .user-dropdown {
+            position: relative;
+            font-size: 14px;
+            align-items: center;
+            border-radius: 0.3em;
+
+        }
+
+        .user-dropdown ul {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #eeee;
+            margin: 0;
+            width: 45px;
+            padding: 0 0 0 5px;
+            border-radius: 0.1em;
+            list-style: none;
+
+        }
+
+        .dropdown-logos {
+            height: 15px;
+            width: 15px;
+            padding-right: 5px;
+
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            padding: 0 20px;
+
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .nav-links a {
+            margin-right: 80px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar form {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input {
+            height: 30px;
+            padding: 0 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+
+        }
+
+        .search-bar button {
+            height: 30px;
+            border: none;
+            background-color: white;
+            border-radius: 0 5px 5px 0;
+
+        }
+
+
+        .user-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-links a {
+            margin-right: 20px;
+            text-decoration: none;
+
+
+        }
+
+        .cart {
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+
+        }
+
+        .cart img {
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .account img {
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .promo {
+            position: relative;
+            width: 100%;
+        }
+
+        .promo img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .promo-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-180%, -50%);
+            text-align: left;
+            color: #fff;
+
+        }
+
+        .promo-text h2 {
+            font-size: 2rem;
+        }
+
+        .promo-text button {
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            background-color: darkgreen;
+            border-radius: 1.5em;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* styl pro dropdown button */
+        .dropbtn {
+            background-color: #eeee;
+            color: black;
+            padding: 8px;
+            font-size: 16px;
+            height: 35px;
+
+            border: none;
+            cursor: pointer;
+            border-radius: 2em;
+            display: flex;
+        }
+
+        /* styl pro dropdown button, když na něj najedeme myší */
+        .dropbtn:hover {
+            background-color: #3e8e41;
+        }
+
+        /* styl pro dropdown obsah */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            width: 120px;
+
+        }
+
+        /* styl pro položky v dropdown obsahu */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* styl pro položky v dropdown obsahu, když na ně najedeme myší */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* zobrazení dropdown obsahu, když na dropdown button najedeme myší */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* styl pro celý dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .dropbtn-sort {
+            background-color: white;
+            color: black;
+            padding: 8px;
+            font-size: 16px;
+            height: 35px;
+            cursor: pointer;
+            border-radius: 2em;
+            border: 2px solid #888888;
+            display: flex;
+
+        }
+
+        .chcitodoprava{
+            padding-left: 283px;
+            display: inline-block;
+        }
+        .product {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+
+
+        .info {
+            display: flex;
+        }
+
+        .info p:first-child {
+            margin-right: 1em;
+        }
+
+        .certification {
+            font-size: 10px;
+            color: #8c8c8c;
+        }
+
+        .rating {
+            margin-top: 5px;
+
+        }
+
+        .add-to-cart {
+            border: 2px solid #e3e3e3;
+            height: 25px;
+
+            display: inline-block;
+            border-radius: 25px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-top: 10px;
+            margin-top: 5px;
+        }
+
+        .add-to-cart p {
+            margin: 0;
+        }
+
+        .headphones {
+            background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS771Acx8KVWpPF9yNMqsz_piZ8HcGAfKsXgUOB_8tHaJnFlerSexH-OLNBpctc1-yRegs&usqp=CAU");
+            background-repeat: no-repeat;
+            min-height: 150px;
+            background-size: cover;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <i class="bi bi-telephone"></i>
+        <div class="phone">
+            <i class="fa fa-phone"></i>
+            <span>+001234567890</span>
+        </div>
+    </div>
+    <div class="offer">
+
+        <p>Get 50% Off on selected Items | Shop Now</p>
+    </div>
+    <div class="user-dropdown">
+
+        <span>Eng</span> <i class="bi bi-chevron-down"></i>
+        <ul>
+
+
+            <li><a href="#"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Spanish_Presidential_Flag.svg/600px-Spanish_Presidential_Flag.svg.png"
+                    class="dropdown-logos">ES</a></li>
+            <li><a href="#"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/1200px-Flag_of_the_Czech_Republic.svg.png"
+                    class="dropdown-logos">CZ</a></li>
+
+        </ul>
+    </div>
+    <div class="user-dropdown">
+
+        <span>Location</span> <i class="bi bi-chevron-down"></i>
+        <ul>
+
+
+            <li><a href="#"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Spanish_Presidential_Flag.svg/600px-Spanish_Presidential_Flag.svg.png"
+                    class="dropdown-logos">ES</a></li>
+            <li><a href="#"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/1200px-Flag_of_the_Czech_Republic.svg.png"
+                    class="dropdown-logos">CZ</a></li>
+
+        </ul>
+    </div>
+</header>
+
+<div class="container">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://static.businessworld.in/article/article_extra_large_image/1658591863_GCn2sM_instacart.jpg"
+                 alt="Shopcard logo">
+        </div>
+        <div class="nav-links">
+            <a href="#">Categories<i class="bi bi-chevron-down"></i></a>
+            <a href="#">Deals</a>
+            <a href="#">What's New</a>
+            <a href="#">Delivery</a>
+        </div>
+        <div class="search-bar">
+            <form>
+                <input type="text" placeholder="Search Product">
+                <button type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+        </div>
+        <div class="user-links">
+            <i class="bi bi-person"></i>
+            <span>Account</span>
+            <div class="cart">
+                <i class="bi bi-cart-dash"></i>
+                <span>Cart</span>
+            </div>
+        </div>
+    </nav>
+    <div class="promo">
+        <img src="http://media.bizj.us/view/img/10099525/howtomanagingwearingheadphones*1200xx2715-1530-0-41.jpg"
+             alt="Promotional image" style="padding-bottom: 35px">
+        <div class="promo-text">
+            <h2>Grab Upto 50% Off on </h2>
+            <h2>Selected Headphone</h2>
+            <button>Buy Now</button>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Headphones Type<i class="bi bi-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <a href="#">Wireless</a>
+            <a href="#">Wired</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Price<i class="bi bi-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <a href="#">Low to High</a>
+            <a href="#">High to low</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Rewiew<i class="bi bi-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <a href="#">5 stars</a>
+            <a href="#">4 stars</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Color<i class="bi bi-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <a href="#">Brown</a>
+            <a href="#">Black</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Material<i class="bi bi-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <a href="#">Leather</a>
+            <a href="#">Iron</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Offer<i class="bi bi-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <a href="#">IDK</a>
+            <a href="#">IDK</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">All Filters<i class="bi bi-sliders"></i></button>
+        <div class="dropdown-content">
+            <a href="#">Nevim</a>
+            <a href="#">Pomoc</a>
+        </div>
+    </div>
+
+    <div class="chcitodoprava">
+    <div class="dropdown">
+        <button class="dropbtn-sort">Sort by<i class="bi bi-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <a href="#">Nevim</a>
+            <a href="#">Pomoc</a>
+        </div>
+    </div>
+    </div>
+    <h2 style="padding-top: 25px">Headphones For You!</h2>
+    <div class="product">
+        <div class="headphones">
+
+            <i class="bi bi-heart"></i>
+        </div>
+        <div class="info">
+            <p>AirPods Max</p>
+            <p>$559.99</p>
+        </div>
+        <p class="certification">A perfect balance of high-fidelity audio</p>
+        <div class="rating">
+            <p><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>(121)</p>
+        </div>
+        <div class="add-to-cart">
+            <p>Add to Cart</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

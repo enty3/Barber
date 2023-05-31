@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>next</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .fixed {
+      top: 0;
+      position: fixed;
+      width: 100vw;
+    }
+
+    header {
+      background-color: black;
+    }
+
+    .header-content {
+      width: 1000px;
+      margin: 0 auto;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .vercel {
+      width: 10%;
+    }
+
+    .header-content span {
+      color: white;
+    }
+
+    .nav-wrap {
+      background-color: #fafafa;
+    }
+
+    .nav {
+      width: 1000px;
+      margin: 0 auto;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      width: 125px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: black;
+      padding: 15px;
+      margin-left: 10px;
+    }
+
+    .a-wrap {
+      display: flex;
+      align-items: center;
+    }
+
+    .buttons-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .buttons-wrap button {
+      width: 75px;
+      padding: 10px;
+    }
+
+    .buttons-wrap button:first-child {
+      background-color: white;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .buttons-wrap button:nth-child(2) {
+      background-color: black;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .main-content-container {
+      background-color: #fafafa;
+      margin-top: 111px;
+    }
+
+    main {
+      width: 1000px;
+      margin: 0 auto;
+      padding: 75px;
+    }
+
+    main > h1 {
+      text-align: center;
+      color: black;
+      font-size: 4.5em;
+      font-weight: 900;
+      font-family: 'Roboto', sans-serif;
+      margin-top: 50px;
+    }
+
+    main > p {
+      color: gray;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .main-content {
+      margin: 0 auto;
+      gap: 10px;
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+    }
+
+    .main-content-item {
+      text-align: center;
+      padding: 25px;
+      background-color: white;
+      border-radius: 5px;
+    }
+
+    .main-content-item p {
+      margin-top: 15px;
+    }
+
+    .rotated-img {
+      margin: 0 auto;
+      background-image: url("https://raw.githubusercontent.com/2bad2furious/next-task-assets/main/react-rotated.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 50%;
+      height: 150px;
+    }
+
+    .server-img {
+      margin: 0 auto;
+      background-image: url("https://raw.githubusercontent.com/2bad2furious/next-task-assets/main/routing.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 50%;
+      height: 150px;
+    }
+
+    .full-stack {
+      background-color: white;
+    }
+
+    .full-stack-content {
+      width: 1000px;
+      margin: 0 auto;
+      padding: 25px;
+    }
+
+    .full-stack-content h2 {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .full-stack-content > p {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 300;
+    }
+
+    .full-stack-flex {
+      justify-content: space-between;
+      gap: 15px;
+      display: flex;
+      margin-top: 50px;
+    }
+
+    .full-stack-flex-item {
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      padding: 25px;
+    }
+
+    .full-stack-flex-item h3 {
+      text-align: center;
+    }
+
+    .full-stack-flex-item p {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+
+    .full-stack-flex-item a {
+      color: blue;
+      margin-top: 15px;
+    }
+
+    footer {
+      background-color: #fafafa;
+    }
+
+    .footer-content {
+      text-align: right;
+      width: 1000px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    .footer-vercel {
+      width: 7%;
+    }
+  </style>
+</head>
+<body>
+<div class="fixed">
+  <header>
+    <div class="header-content">
+      <img src="https://raw.githubusercontent.com/2bad2furious/next-task-assets/main/vercel.png" class="vercel">
+      <span>Deploy <b>Next</b> on Vercel →</span>
+    </div>
+  </header>
+  <div class="nav-wrap">
+    <div class="nav">
+      <div class="a-wrap">
+        <img src="https://raw.githubusercontent.com/2bad2furious/next-task-assets/main/logo.png" class="logo">
+        <a href="">Showcase</a>
+        <a href="">Docs</a>
+        <a href="">Blogs</a>
+        <a href="">Analytics</a>
+        <a href="">Templates</a>
+        <a href="">Enterprise</a>
+      </div>
+      <div class="buttons-wrap">
+        <button>Feedback</button>
+        <button>Learn</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main-content-container">
+  <main>
+    <h1>The react framework for the web</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis distinctio expedita explicabo, magnam
+      molestiae odio optio qui quia quis sunt vel vero vitae? Ab aspernatur, dolor expedita quis sint velit
+      voluptatibus. Amet asperiores beatae excepturi.</p>
+    <div class="main-content">
+      <div class="main-content-item">
+        <div class="server-img"></div>
+        <h3>Powerful routing</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sit.</p>
+      </div>
+      <div class="main-content-item">
+        <div class="rotated-img"></div>
+        <h3>React server components</h3>
+        <p><span style="color: blue">ipsum</span> dolor sit amet, consectetur adipisicing elit. Laudantium, sit.
+        </p>
+      </div>
+    </div>
+
+  </main>
+</div>
+<div class="full-stack">
+  <div class="full-stack-content">
+    <h2>Full-stack React applications made easy</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam magni maxime modi quia recusandae!</p>
+    <div class="full-stack-flex">
+      <div class="full-stack-flex-item">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo minima quas, quasi quisquam reiciendis
+          voluptas!</p>
+        <a href="">Documentation →</a>
+      </div>
+      <div class="full-stack-flex-item">
+        <h3>Lorem ispum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo minima quas, quasi quisquam reiciendis
+          voluptas!</p>
+        <a href="">Documentation →</a>
+      </div>
+      <div class="full-stack-flex-item">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo minima quas, quasi quisquam reiciendis
+          voluptas!</p>
+        <a href="">Documentation →</a>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-content">
+    <img src="https://raw.githubusercontent.com/2bad2furious/next-task-assets/main/vercel_light_bg.png"
+         class="footer-vercel">
+    <p>Copyright lorem ispum</p>
+  </div>
+</footer>
+</body>
+</html>x

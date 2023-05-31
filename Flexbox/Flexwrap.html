@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexWrap</title>
+</head>
+
+<style>
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+    body {
+        margin: 0;
+    }
+
+    header {
+        background-color: darkgreen;
+        width: 100%;
+        color: white;
+
+    }
+
+    .container {
+        width: 1111px;
+        margin: 0 auto;
+    }
+
+    #telefon {
+        color: white;
+    }
+
+    .header-style {
+   display: inline-block;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .user-dropdown:hover ul {
+        display: block;
+    }
+
+    .user-dropdown {
+        position: relative;
+        display: inline-block;
+        border-radius: 0.3em;
+        padding-top: 10px;
+    }
+
+    .user-dropdown ul {
+        display: none;
+        position: absolute;
+        background-color: white;
+        border: 1px solid #eeee;
+        margin: 0;
+        width: 45px;
+        padding: 0 0 0 5px;
+        border-radius: 0.1em;
+
+    }
+
+    .dropdown-logos {
+        height: 15px;
+        width: 15px;
+        padding-right: 5px;
+
+    }
+
+    .bi-telephone{
+        display: inline-block;
+    }
+</style>
+<body>
+
+<header>
+    <i class="bi bi-telephone"></i>
+    <div class="header-style">
+        <div class="left">
+        <a href="#h" id="telefon" class="active">+001234567890</a>
+        </div>
+        <span>Get 50% Off on selected Items | Shop Now</span>
+        <div class="user-dropdown">
+
+            <span>Eng</span> <i class="bi bi-caret-down"></i>
+            <ul>
+
+
+                <li><a href="#"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Spanish_Presidential_Flag.svg/600px-Spanish_Presidential_Flag.svg.png"
+                        class="dropdown-logos">ES</a></li>
+                <li><a href="#"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/1200px-Flag_of_the_Czech_Republic.svg.png"
+                        class="dropdown-logos">CZ</a></li>
+
+            </ul>
+        </div>
+        <div class="user-dropdown">
+
+            <span>Location</span> <i class="bi bi-caret-down"></i>
+            <ul>
+
+
+                <li><a href="#"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Spanish_Presidential_Flag.svg/600px-Spanish_Presidential_Flag.svg.png"
+                        class="dropdown-logos">ES</a></li>
+                <li><a href="#"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/1200px-Flag_of_the_Czech_Republic.svg.png"
+                        class="dropdown-logos">CZ</a></li>
+
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <h2>fff</h2>
+
+</div>
+
+</body>
+</html>

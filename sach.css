@@ -1,0 +1,17 @@
+tr:nth-child(2n) td:nth-child(2n + 1) {
+    background: black;
+}
+tr:nth-child(2n + 1) td:nth-child(2n) {
+    background: lightgrey;
+}
+table {
+    border-collapse: collapse;
+}
+td,
+th {
+    width: 2em;
+    height: 2em;
+}
+td {
+    border: 2px solid black;
+}

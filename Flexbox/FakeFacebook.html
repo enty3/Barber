@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+    body {
+        background-color: whitesmoke;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        width: 100%;
+        background-color: white;
+        height: 25px;
+    }
+
+    .logo-left {
+        width: 25px;
+        height: 25px;
+    }
+
+    .logo-center {
+        width: 25px;
+        height: 25px;
+        border-bottom: 4px solid blue;
+    }
+
+    .logos-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .logos-right img {
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+        border-radius: 100%;
+    }
+
+
+    .container {
+        width: 650px;
+        margin: 0 auto;
+
+    }
+
+
+    .user-post {
+        margin-bottom: 20px;
+        border: 2px solid lightgrey;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+
+    .profile-navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5px;
+        align-items: center;
+        margin-bottom: 1px;
+        padding-bottom: 5px;
+
+    }
+
+    .user-logo {
+        width: 50px;
+        height: 50px;
+        margin-left: 5px;
+        border-radius: 100%;
+    }
+
+    .user-name {
+        padding-left: 10px;
+    }
+
+
+    .user-photo {
+        width: 100%;
+        height: auto;
+
+
+    }
+
+
+    .text {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        color: gray;
+    }
+
+
+    .logos {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+        margin-right: 50px;
+
+
+    }
+
+    .logos img {
+        width: 30px;
+        height: 30px;
+        margin-right: 60px;
+    }
+
+    .article {
+        display: flex;
+        border: 2px solid lightgrey;
+        border-radius: 15px;
+        background-color: white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .profile {
+        padding: 20px;
+    }
+
+    .profile img {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        margin-right: -30px;
+
+    }
+
+    .chat-input {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .chat-input input[type="text"] {
+        width: 80%;
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 2px solid lightgrey;
+
+    }
+
+    .top-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+
+    }
+
+    .likecommentssharetext {
+        margin-left: -220px;
+        margin-top: 5px;
+    }
+
+    .user-dropdown:hover ul {
+        display: block;
+    }
+
+    .user-dropdown {
+        position: relative;
+        display: inline-block;
+        border-radius: 0.3em;
+        height: 35px;
+        padding-top: 10px;
+        width: 50px;
+
+        margin-top: -15px;
+
+
+    }
+
+    .user-dropdown ul {
+        display: none;
+
+        background-color: white;
+        border: 1px solid white;
+        margin: 0;
+        width: 135px;
+        padding: 0 0 0 5px;
+        border-radius: 0.5em;
+    }
+
+    li {
+        list-style: none;
+        padding: 10px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+
+
+    }
+
+    .dropdown-logos {
+        height: 15px;
+        width: 15px;
+        padding-right: 5px;
+
+    }
+
+    .fix {
+        align-items: center;
+        display: flex;
+
+
+    }
+
+    .add-post {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+
+    .addpostlogo {
+        height: 150px;
+        width: 150px;
+
+    }
+
+    .main {
+        width: 100%;
+
+    }
+
+    button {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+    }
+
+</style>
+
+<nav class="navbar">
+    <img src="https://cdn-icons-png.flaticon.com/512/20/20673.png" class="logo-left">
+    <img src="data:image/png;base64,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"
+         class="logo-center">
+    <div class="logos-right">
+        <img src="https://praha.educanet.cz/wp-content/uploads/2019/09/macura_martin-scaled.jpg">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/facebook-messenger-1464524-1239438.png">
+    </div>
+</nav>
+
+<main class="main">
+    <div class="container">
+        <div class="article">
+            <div class="profile">
+                <img src="https://praha.educanet.cz/wp-content/uploads/2019/09/macura_martin-scaled.jpg"
+                     alt="Profile picture">
+            </div>
+            <div class="chat-input">
+                <form action="#">
+                    <input type="text" placeholder="What's on your mind?">
+                </form>
+            </div>
+        </div>
+
+        <div class="user-post">
+
+            <div class="profile-navbar">
+                <div class="fix">
+                    <img src="https://praha.educanet.cz/wp-content/uploads/2019/09/macura_martin-scaled.jpg"
+                         class="user-logo">
+                    <span class="user-name">Martin Macura</span>
+                </div>
+                <div class="user-dropdown">
+
+                    <img src="https://media.istockphoto.com/id/1396048367/vector/triple-dots-icon-vector-three-dots-as-a-symbol-of-menu-interface-or-more-options-3-ellipses.jpg?s=612x612&w=0&k=20&c=wCh-lsZlTRtE_AgnmqSmYRARZKfawhtObulGRV_FRd0="
+                         class="top-right">
+
+                    <ul>
+
+
+                        <li><a href="#"><img src="https://static.thenounproject.com/png/1697283-200.png"
+                                             class="dropdown-logos">Mute profile</a></li>
+                        <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1527/1527352.png"
+                                             class="dropdown-logos">Report </a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQkrjYxSfSHeCEA7hkPy8e2JphDsfFHZVKqx-3t37E4XKr-AT7DML8IwtwY0TnZsUcQ"
+                 class="user-photo">
+
+            <div class="text">
+                <p class="likes">2 likes</p>
+                <p class="comments">3 comments 1 share</p>
+            </div>
+
+            <div class="logos">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/001/505/090/small/like-icon-free-vector.jpg">
+                <div class="likecommentssharetext">like</div>
+
+                </img>
+                <img src="https://cdn2.iconfinder.com/data/icons/medical-healthcare-26/28/Chat-2-512.png">
+                <div class="likecommentssharetext">comment</div>
+                </img>
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25419.png">
+                <div class="likecommentssharetext">share</div>
+                </img>
+
+            </div>
+        </div>
+        <div class="user-post">
+
+            <div class="profile-navbar">
+                <div class="fix">
+                    <img src="https://praha.educanet.cz/wp-content/uploads/2018/09/vybiral_radek-scaled.jpg"
+                         class="user-logo">
+                    <span class="user-name">Sammer Tammer</span>
+                </div>
+                <div class="user-dropdown">
+
+                    <img src="https://media.istockphoto.com/id/1396048367/vector/triple-dots-icon-vector-three-dots-as-a-symbol-of-menu-interface-or-more-options-3-ellipses.jpg?s=612x612&w=0&k=20&c=wCh-lsZlTRtE_AgnmqSmYRARZKfawhtObulGRV_FRd0="
+                         class="top-right">
+
+                    <ul>
+
+
+                        <li><a href="#"><img src="https://static.thenounproject.com/png/1697283-200.png"
+                                             class="dropdown-logos">Mute profile</a></li>
+                        <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1527/1527352.png"
+                                             class="dropdown-logos">Report </a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <img src="https://i1.sndcdn.com/artworks-a935YgG1ImjsiNn3-ZQfvpg-t500x500.jpg"
+                 class="user-photo">
+
+            <div class="text">
+                <p class="likes">1,565,151 likes</p>
+                <p class="comments">97,404 comments 85,849 share</p>
+            </div>
+
+            <div class="logos">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/001/505/090/small/like-icon-free-vector.jpg">
+                <div class="likecommentssharetext">like</div>
+
+                </img>
+                <img src="https://cdn2.iconfinder.com/data/icons/medical-healthcare-26/28/Chat-2-512.png">
+                <div class="likecommentssharetext">comment</div>
+                </img>
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25419.png">
+                <div class="likecommentssharetext">share</div>
+                </img>
+
+            </div>
+        </div>
+        <div class="add-post">
+            <img src="https://icons-for-free.com/download-icon-add+photo+instagram+upload+icon-1320184027593509107_512.png"
+                 class="addpostlogo">
+        </div>
+
+    </div>
+</main>
+</html>

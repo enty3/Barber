@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React</title>
+</head>
+<style>
+    body {
+        background-image: url("unicorn.jpg");
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right;
+    }
+
+
+    .hlavicka {
+        width: 900px;
+        margin: 0 auto;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+
+    .tlacitko {
+        background: none;
+        padding: 8px;
+        font-size: 16px;
+        border: 2px solid white;
+        color: white;
+        display: flex;
+        border-radius: 0.5em;
+    }
+
+    .content {
+        width: 900px;
+        margin: 0 auto;
+        background-color: white;
+border-radius: 10px;
+    }
+
+    .moznost {
+        background-color: white;
+        border: 2px solid grey;
+        color: black;
+        display: flex;
+        border-radius: 0.5em;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .nozicka {
+        padding: 1em;
+        border-top: 1px solid white;
+        color: white;
+        text-align: right;
+        margin: 0 auto;
+        margin-top: 300px;
+        width: 900px;
+
+    }
+
+    .button-container {
+        padding-top: 10px;
+        display: flex;
+        gap: 0.5em;
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .button-container button {
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 0.5em;
+        padding: 1.2em;
+    }
+
+
+    .button-container button:nth-child(2) {
+        flex-grow: 1;
+    }
+
+    p{
+        display: flex;
+
+
+    }
+
+</style>
+<body>
+
+<div class="hlavicka">
+    <button class="tlacitko">Opustit test</button>
+    <h2 style="display: inline-block; color: white; display: flex">Úvod do Reactu</h2>
+    <span style="display: flex"></span>
+</div>
+<div class="content">
+
+    <h2 style=" text-align: center; ">Vyberte správnou možnost</h2>
+    <div class="moznost"><p><input type="checkbox" style="width: 30px; height: 30px;">Lorem ipsum žalud.</p></div>
+    <br>
+    <div class="moznost"><p><input type="checkbox" style="width: 30px; height: 30px;">Lorem ipsum žalud.</p></div>
+    <br>
+
+</div>
+
+<div class="button-container">
+    <button> <</button>
+    <button>Potvrdit</button>
+    <button> ></button>
+</div>
+
+<div class="nozicka">
+    <div class="footer-content">&#169; Unicorn university</div>
+</div>
+
+
+</body>
+</html>

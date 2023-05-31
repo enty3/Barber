@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gg</title>
+</head>
+<style>
+
+    body {
+        background-color: lightskyblue;
+        font-family: "Comic Sans MS", serif
+    }
+
+
+    .obal {
+        width: 600px;
+        height: 500px;
+        margin: auto;
+        padding: 15px;
+        background: whitesmoke;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+
+    }
+
+    input[type=text] {
+        width: 100%;
+        border: 1px solid #ccc;
+        display: inline-block;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 10px;
+
+
+
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color:deepskyblue;
+        border: none;
+        padding: 14px 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+        color: white;
+    }
+
+
+
+
+
+</style>
+<body>
+
+
+<div class="obal">
+
+    <h1>Přidejte recenzi</h1>
+    <h5>Váš email* (nebude zveřejněn):</h5>
+    <input type="text" id="email" name="email">
+    <h5>Váše jméno* (nebude zveřejněn):</h5>
+    <input type="text" id="name" name="jmeno">
+    <h5>Text recenze* (nebude zveřejněn):</h5>
+    <input type="text" id="text" name="text">
+    <div><input type="checkbox" id="checkbox" name="checkbox">Souhlas se zpracováním osobních údajů*</div>
+    <input type="submit" value="Odeslat recenzi">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bael</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .dropdown {
+        overflow: hidden;
+        display: inline-block;
+        border-radius: 1em;
+        height: 35px;
+        padding-top: 15px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: mediumspringgreen;
+        color: white;
+        margin: 0;
+        width: 100%;
+        padding: 0 0 0 20px;
+        border-radius: 0.3em;
+        list-style: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        display: block;
+        margin: 0;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+    }
+    
+
+    .navbar {
+        background-color: #63b180;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5em;
+    }
+
+
+    .navbar-case {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em;
+    }
+
+
+    .obal {
+        display: flex;
+        background-color: #525E71;
+        flex-direction: column;
+
+    }
+
+
+    .BookButton {
+        color: white;
+        background-color: lightgreen;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100px;
+        border: 20px solid lightgrey;
+    }
+
+    .text {
+        color: white;
+        align-self: center;
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .main {
+        width: 95%;
+        margin: 0 auto;
+
+    }
+
+    .code {
+        width: 500px;
+        background-color: lightgray;
+        border-radius: 0.4em;
+        height: 30px;
+    }
+
+
+    .nodropdown-content {
+        display: none;
+    }
+
+    .footerr {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .topfooter {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+
+    .topfooter img {
+        margin-right: 10px;
+    }
+
+    .topfooter h2 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .footercontent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+    }
+
+    .footercontent2 {
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.5;
+        display: inline-block;
+
+    }
+
+    .footercontent3 {
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.5;
+        display: inline-block;
+    }
+
+    .footercontent4 {
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.5;
+        display: inline-block;
+    }
+
+
+    .footercontent2 p {
+        margin: 0;
+    }
+
+    .footercontent b {
+        font-size: 18px;
+        margin-right: 20px;
+    }
+
+
+    @media (min-width: 1000px) {
+        .main {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 2em;
+            width: 1000px;
+        }
+
+        .nodropdown-content {
+            display: block;
+        }
+
+        .getbook {
+            position: relative;
+        }
+
+        .dropdown {
+            display: none;
+        }
+
+        .nodropdown-content a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+        }
+
+    }
+</style>
+<body>
+<div class="navbar">
+
+    <div class="navbar-case">
+
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle">
+                <img src="https://img.freepik.com/free-icon/block_318-421050.jpg?w=2000" style="height:25px">
+            </a>
+            <ul class="dropdown-content">
+                <li><a href="#">Zprávy</a></li>
+                <li><a href="#">Služby</a></li>
+                <li><a href="#">Faktury</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </div>
+
+
+
+        <img src="logo.png">
+
+        <div class="nodropdown-content">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+    </div>
+    <i class="bi bi-search"></i>
+
+</div>
+
+<br>
+<div class="main">
+    <div class="getbook">
+        <div class="obal">
+            <img src="book.png" style=" display: flex; width: 300px; justify-content: center;">
+            <div class="text">Build a REST API with Spring 5?</div>
+            <div class="BookButton">GET IT E-BOOK</div>
+        </div>
+    </div>
+    <div class="Container">
+        <h1>A Docker guide for Java</h1>
+        <h2>1. Overview</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <h2>2. Maven Dependecy</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <input type="text" placeholder="Your code:" class="code"></label>
+        <br>
+        <br>
+        <img src="ad.png" style="width: 85%;    ">
+        <h2>3. Using doctor client</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <input type="text" placeholder="Your code:" class="code"></label>
+        <br>
+        <br>
+    </div>
+</div>
+
+<div class="footerr">
+    <div class="topfooter">
+        <img src="https://lh3.googleusercontent.com/WWOAjJg8hx27tvMvy5sn88mZs2pjH4i93xROPAn959M1ptmLXNs9Y4Rn-6oeVz4NzemljKMoTNqY3WM=w1920-h932"
+             width="200" height="50">
+    </div>
+    <div class="footercontent">
+
+
+        <div class="footercontent2">
+            <h3>Courses</h3>
+            <p>All Courses</p>
+            <p>Java</p>
+            <p>Spring</p>
+            <p>REST</p>
+        </div>
+        <div class="footercontent3">
+            <h3>Series</h3>
+            <p>Twitter</p>
+            <p>Facebook</p>
+            <p>LinkedIn</p>
+        </div>
+        <div class="footercontent4">
+            <h3>About</h3>
+            <p>Twitter</p>
+            <p>Facebook</p>
+            <p>LinkedIn</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

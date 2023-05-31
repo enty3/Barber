@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram V2</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+    body {
+        font-family: "Open Sans", sans-serif;
+
+    }
+
+    .post-image {
+        background-image: url("https://cdn.pixabay.com/photo/2016/01/22/17/43/pablo-1156293_960_720.jpg");
+        height: 400px;
+        width: 300px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: black;
+        display: inline-block;
+
+
+    }
+
+    .post-comments {
+        display: inline-block;
+        vertical-align: top;
+        width: 286px;
+    }
+
+    .post {
+        width: 600px;
+        margin: 0 auto;
+        border: 1px solid #eeee;
+        height: 399px;
+    }
+
+    .user-dropdown:hover ul {
+        display: block;
+    }
+
+    .user-dropdown {
+        position: relative;
+        display: inline-block;
+        border: 1px solid #eeee;
+        border-radius: 0.3em;
+        height: 35px;
+        padding-top: 10px;
+    }
+
+    .user-dropdown ul {
+        display: none;
+        position: absolute;
+        background-color: white;
+        border: 1px solid #eeee;
+        margin: 0;
+        width: 135px;
+        padding: 0 0 0 5px;
+        border-radius: 0.3em;
+    }
+
+    li {
+        list-style: none;
+        border-bottom: 1px solid #eeee;
+        padding: 5px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+
+
+    }
+
+    h1 {
+        display: inline-block;
+        margin-left: 470px;
+        margin-right: 50px;
+    }
+
+    .badge {
+        position: absolute;
+        display: inline-block;
+        background: red;
+        right: -0.5em;
+        top: -0.5em;
+        width: 1.3em;
+        height: 1.3em;
+        text-align: center;
+        border-radius: 100%;
+        color: #fff;
+    }
+
+    .userpc {
+        width: 30px;
+        vertical-align: middle;
+    }
+
+    p {
+        padding-left: 5px;
+    }
+
+    .messagebadge {
+        display: inline-block;
+        background: red;
+        width: 1.3em;
+        height: 1.3em;
+        text-align: center;
+        border-radius: 100%;
+        color: #fff;
+        position: absolute;
+        right: 1em;
+
+
+    }
+
+    .autor {
+
+    }
+
+
+</style>
+<body>
+
+<h1>Instagram</h1>
+<div class="user-dropdown">
+
+    <img src="https://t4.ftcdn.net/jpg/02/29/75/83/360_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg" class="userpc">
+    Lorem, ipsum.
+    <span class=badge>5</span>
+    <ul>
+
+        <li><a href="#">Zprávy <span class="messagebadge">5</span></a>
+        </li>
+        <li><a href="#">Služby</a></li>
+        <li><a href="#">Faktury</a></li>
+        <li><a href="#">Kontakt</a></li>
+    </ul>
+</div>
+<div class="post">
+    <div class="post-image">
+
+    </div>
+    <div class="post-comments">
+
+        <ul style="padding-left: 0;">
+            <li style=" border-bottom: 1px solid #eeee; width: 100%">
+
+                <div class="autor">
+
+                    <img src="https://t4.ftcdn.net/jpg/02/29/75/83/360_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg"
+                         class="userpc">
+
+                    <b>Lorem ipsum</b>
+                    <p>20/12/2022</p>
+                </div>
+        </ul>
+
+        <b>Tammer Sammer</b>
+        <span>Skvělý!</span>
+        <br>
+        <b>Lorem Ipsum</b>
+        <span>dik bozo</span>
+        <br>
+        <br>
+        <b>Tammer Sammer</b>
+        <span>nesnasim citrony</span>
+        <br>
+        <b>Lorem Ipsum</b>
+        <span>taky</span>
+    </div>
+</div>
+</body>
+</html>

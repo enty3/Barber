@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FakeReact</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap" rel="stylesheet">
+</head>
+<style>
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+
+  }
+
+  .navbar {
+    display: flex;
+    padding: 10px;
+    background-color: purple;
+
+  }
+
+  .obal {
+    display: flex;
+    margin: 0 auto;
+justify-content: space-between;
+    width: 1000px;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 650px;
+    padding-right: 15px;
+  }
+
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hlavicka {
+    display: flex;
+
+    align-items: center;
+    height: 80px;
+    width: 1000px;
+    background-color: black;
+    color: white;
+  }
+
+  .nav-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+  }
+
+  .tlacitko {
+    background-color: black;
+    color: black;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid white;
+    color:white;
+    display: flex;
+    border-radius: 0.2em;
+
+  }
+
+  .tlacitko2 {
+    background-color: white;
+    color: black;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid white;
+    display: flex;
+    border-radius: 0.2em;
+
+
+  }
+
+
+  .promo {
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 150px;
+
+  }
+
+  h1 {
+
+    font-size: 80px;
+    text-align: center;
+
+  }
+
+  p {
+    color: #888888;
+    text-align: center;
+    margin: 0;
+  }
+
+  .main-content {
+    margin: 0 auto;
+    gap: 10px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    width: 650px;
+
+  }
+
+  .main-content-item {
+
+    padding: 25px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid white;
+  }
+
+  .main-content-item p {
+    margin-top: 15px;
+  }
+
+  .rotated-img {
+    margin: 0 auto;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+    height: 150px;
+  }
+
+  .server-img {
+    margin: 0 auto;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+    height: 150px;
+  }
+
+  .full-stack {
+    background-color: white;
+  }
+
+  .full-stack-content {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 25px;
+  }
+
+  .full-stack-content h2 {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .full-stack-content > p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .full-stack-flex {
+    justify-content: space-between;
+    gap: 15px;
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .full-stack-flex-item {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 25px;
+  }
+
+  .full-stack-flex-item h3 {
+    text-align: center;
+  }
+
+  .full-stack-flex-item p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .full-stack-flex-item a {
+    color: blue;
+    margin-top: 15px;
+  }
+
+  footer {
+    background-color: #fafafa;
+  }
+
+  .footer-content {
+    text-align: right;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .footer-vercel {
+    width: 7%;
+  }
+
+
+
+
+
+</style>
+<body>
+
+<div class="navbar">
+  <div class="obal">
+    <span>Neco zase droplo!</span>
+    <span>X</span>
+  </div>
+</div>
+<div class="container">
+  <nav class="hlavicka">
+    <div class="logo">
+      <img src="https://astro.build/assets/press/astro-logo-light.png"
+           style="height: 20px; padding-right: 50px">
+
+    </div>
+    <div class="nav-links">
+      <a href="#">Documentation</a>
+      <a href="#">ShowCase</a>
+      <a href="#">Resources→</a>
+      <a href="#">Blog</a>
+
+    </div>
+
+    <button class="tlacitko">GitHub</button>
+    <button class="tlacitko2">Discord</button>
+  </nav>
+
+  <div class="promo">
+
+    <h1>Build the web you want</h1>
+
+  </div>
+
+  <p>Used by some of the world's largest companies, Next.js enables you to create full-stack web applications by</p>
+  <p>extending the latest React features, and integrating powerful Rust-based </p>
+
+  <div class="main-content">
+    <div class="main-content-item">
+
+      <h3>Powerful routing</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <div class="main-content-item">
+
+      <h3>React server components</h3>
+      <p><span style="color: blue">ipsum</span> dolor sit amet, consectetur adipisicing elit.
+      </p>
+    </div>
+  </div>
+
+
+
+</div>
+</body>
+</html>

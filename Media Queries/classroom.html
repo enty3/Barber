@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FakeClassroom</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+</head>
+
+
+<style>
+
+
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    .nav-bar {
+        padding: 1.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+    }
+    .nav-group-flex  {
+        font-size: 1.2em;
+    }
+    .nav-group-flex {
+        display: flex;
+        gap: 0.5em;
+        align-items: center;
+    }
+    main {
+        padding: 2em;
+    }
+    .classrooms-container-flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0.5em;
+    }
+    .classrooms-item {
+        width: 33%;
+        border: 1px solid lightgrey;
+        border-radius: 1em;
+        overflow: hidden;
+        margin-bottom: 1em;
+    }
+    .classroom-item-top {
+        background-image: url("https://www.gstatic.com/classroom/themes/img_bookclub.jpg");
+        background-position: right;
+        background-size: cover;
+        padding: 0.5em;
+        color: white;
+    }
+    .classroom-item-bottom {
+        padding: 0.5em;
+    }
+    @media (max-width: 1350px) {
+        .classrooms-item {
+            width: 49%;
+        }
+    }
+    @media (max-width: 800px) {
+        .classrooms-item {
+            width: 100%;
+        }
+        .classrooms-container-flex {
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+<header>
+    <div class="nav-bar">
+        <div class="nav-group-flex">
+            <i class="bi bi-list"></i>
+            <span><b>G</b></span>
+            <span>Classroom</span>
+        </div>
+        <div class="nav-group-flex">
+            <i class="bi bi-plus-lg"></i>
+            <i class="bi bi-grid-3x3-gap-fill"></i>
+            <i class="bi bi-person-circle"></i>
+        </div>
+    </div>
+</header>
+<main>
+    <section id="classrooms">
+        <div class="classrooms-container-flex">
+            <div class="classrooms-item">
+                <div class="classroom-item-top">
+                    <h4>PRG C2 - 2022/23</h4><br>
+                    <div>PRG2</div><br>
+                    <div>Martin Macura</div>
+                </div>
+                <div class="classroom-item-bottom">
+                    <div><b>Due Tomorrow</b></div><br>
+                    <div>(DÚ) AoC 2015</div>
+                </div>
+            </div>
+            <div class="classrooms-item">
+                <div class="classroom-item-top">
+                    <h4>PRG C2 - 2022/23</h4><br>
+                    <div>PRG2</div><br>
+                    <div>Martin Macura</div>
+                </div>
+                <div class="classroom-item-bottom">
+                    <div><b>Due Tomorrow</b></div><br>
+                    <div>(DÚ) AoC 2015</div>
+                </div>
+            </div>
+            <div class="classrooms-item">
+                <div class="classroom-item-top">
+                    <h4>PRG C2 - 2022/23</h4><br>
+                    <div>PRG2</div><br>
+                    <div>Martin Macura</div>
+                </div>
+                <div class="classroom-item-bottom">
+                    <div><b>Due Tomorrow</b></div><br>
+                    <div>(DÚ) AoC 2015</div>
+                </div>
+            </div>
+            <div class="classrooms-item">
+                <div class="classroom-item-top">
+                    <h4>PRG C2 - 2022/23</h4><br>
+                    <div>PRG2</div><br>
+                    <div>Martin Macura</div>
+                </div>
+                <div class="classroom-item-bottom">
+                    <div><b>Due Tomorrow</b></div><br>
+                    <div>(DÚ) AoC 2015</div>
+                </div>
+            </div>
+            <div class="classrooms-item">
+                <div class="classroom-item-top">
+                    <h4>PRG C2 - 2022/23</h4><br>
+                    <div>PRG2</div><br>
+                    <div>Martin Macura</div>
+                </div>
+                <div class="classroom-item-bottom">
+                    <div><b>Due Tomorrow</b></div><br>
+                    <div>(DÚ) AoC 2015</div>
+                </div>
+            </div>
+            <div class="classrooms-item">
+                <div class="classroom-item-top">
+                    <h4>PRG C2 - 2022/23</h4><br>
+                    <div>PRG2</div><br>
+                    <div>Martin Macura</div>
+                </div>
+                <div class="classroom-item-bottom">
+                    <div><b>Due Tomorrow</b></div><br>
+                    <div>(DÚ) AoC 2015</div>
+                </div>
+            </div>
+            <div class="classrooms-item">
+                <div class="classroom-item-top">
+                    <h4>PRG C2 - 2022/23</h4><br>
+                    <div>PRG2</div><br>
+                    <div>Martin Macura</div>
+                </div>
+                <div class="classroom-item-bottom">
+                    <div><b>Due Tomorrow</b></div><br>
+                    <div>(DÚ) AoC 2015</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
